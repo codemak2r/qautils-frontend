@@ -57,15 +57,15 @@ export const constantRoutes = [
   {
     path: '/dubbo',
     component: Layout,
-    redirect: '/dubbo/dubbo',
-    name: 'dubbo',
-    meta: { title: 'dubbo', icon: 'interface' },
+    redirect: '/dubbo/list',
+    name: 'Dubbo',
+    meta: { title: 'Dubbo', icon: 'interface' },
     children: [
       {
-        path: 'dubbo',
-        name: 'Dubbo',
+        path: 'list',
+        name: 'List',
         component: () => import('@/views/dubbo/index'),
-        meta: { title: 'dubbo', icon: 'interface' }
+        meta: { title: 'List', icon: 'list' }
       },
       {
         path: 'tree',
