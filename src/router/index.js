@@ -68,10 +68,10 @@ export const constantRoutes = [
         meta: { title: 'List', icon: 'list' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'configuration',
+        name: 'Configuration',
+        component: () => import('@/views/dubbo/components/configuration'),
+        meta: { title: '配置', icon: 'list' }
       }
     ]
   },
